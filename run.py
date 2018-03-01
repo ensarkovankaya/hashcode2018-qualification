@@ -1,13 +1,10 @@
-filepath = "b_should_be_easy.in"
-
 from input import parse
 from car import Car
 from ride import Ride
 
 
 class Game:
-
-    def __init__(self, filepath):
+    def __init__(self, filepath="b_should_be_easy.in"):
         data = parse(filepath)
         self.cars = []
         for vehicle_id in range(data.get('vehicles')):
@@ -27,4 +24,3 @@ class Game:
 
     def run(self):
         pass
-
