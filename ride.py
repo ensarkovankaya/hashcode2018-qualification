@@ -8,6 +8,7 @@ class Ride:
         self.finish_column = int(kwargs.get('finish_column'))
         self.earliest_start = int(kwargs.get('earliest_start'))
         self.latest_finish = int(kwargs.get('latest_finish'))
+        self.active = False
 
     def __str__(self):
         return str(self.id)
