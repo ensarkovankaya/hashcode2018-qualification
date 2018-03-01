@@ -10,7 +10,7 @@ class Ride:
         self.latest_finish = int(kwargs.get('latest_finish'))
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     def __repr__(self):
         return '<Ride %s>' % self.id
