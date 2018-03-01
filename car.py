@@ -1,5 +1,5 @@
 from ride import Ride
-
+import math
 
 class Car:
 
@@ -11,5 +11,5 @@ class Car:
         self.total_move = 0
 
     def calculate_distance(self, ride: Ride):
-        return (self.row - ride.start_row) + (self.column - ride.start_column)
+        return math.fabs((self.row - ride.start_row) + (self.column - ride.start_column))
 
