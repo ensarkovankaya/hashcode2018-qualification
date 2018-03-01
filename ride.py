@@ -1,3 +1,6 @@
+import math
+
+
 class Ride:
 
     def __init__(self, id, **kwargs):
@@ -15,3 +18,6 @@ class Ride:
 
     def __repr__(self):
         return '<Ride %s>' % self.id
+
+    def calculate_distance(self):
+        return math.fabs((self.start_row - self.finish_row) + (self.start_column - self.finish_column))
